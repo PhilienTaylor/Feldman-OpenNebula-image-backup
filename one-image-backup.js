@@ -30,7 +30,7 @@ var one;
 
 // define program
 program
-	.version('1.12.0')
+	.version('1.12.1')
     .option('-i --image <image_id>', 'image id or comma separated list of image ids to backup. Omit for backup all images')
     .option('-S --start-image <image_id>', 'image id to start from backup. Backups all following images including defined one', parseInt)
     .option('-a --datastore <datastore_id>', 'datastore id or comma separated list of datastore ids to backup from. Omit to backup from all datastores to backup')
@@ -104,6 +104,11 @@ function main(){
             }, -2);
         }
     }, function(err, results) {
+	if(err) {
+            console.log(err);
+            process.exit(1);
+        }
+	    
         // iterate over images
         async.eachSeries(results.images, function(image, callback){
             var datastore = results.datastores[image.DATASTORE_ID];
