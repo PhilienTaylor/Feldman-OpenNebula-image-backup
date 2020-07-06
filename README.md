@@ -15,7 +15,7 @@ It backups:
 
 ## How it works
 
-![Flow diagram](https://raw.githubusercontent.com/OpenNebula/addon-image-backup/develop/images/how-it-works.png)
+![Flow diagram](https://gitlab.feldhost.cz/feldhost-public/one-image-backup/raw/master/images/how-it-works.png)
 
 ## Authors
 
