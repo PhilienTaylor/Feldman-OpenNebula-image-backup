@@ -19,7 +19,12 @@ It backups:
 
 ## Authors
 
-* Leader: Kristián Feldsam (feldsam@gmail.com)
+* Leader: Kristián Feldsam (feldsam@feldhost.net)
+
+## Support
+
+[FeldHost™](https://www.feldhost.net/products/opennebula) offers design, implementation, operation and management of a cloud solution based on OpenNebula.
+
 
 ## Compatibility
 
